@@ -1,0 +1,22 @@
+<div class="header-container">
+    <h1>My World News Aggregator!</h1>
+</div>
+<form [formGroup]="countryForm" class="form-container">
+    <input type="text" class="input" formControlName="country">
+    <div>
+        <button mat-raised-button (click)="getCountryNews()">Get News</button>
+    </div>
+</form>
+<div class="articles-container">
+    <div class="article-container" *ngFor="let article of articles.articles">
+        <div class="title-image-container">
+            <div class="title">{{article.title}}</div>
+            <img class="image" src="{{article.urlToImage}}">
+        </div>
+        <div class="description-container">
+            <p>{{article.description}}</p>
+            <!-- <a href="{{article.url}}">Read More</a> -->
+            <button mat-raised-button class="btn" (click)="openArticle(article.url)" color="primary">Link</button>
+        </div>
+    </div>
+</div>
