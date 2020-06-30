@@ -1,0 +1,60 @@
+.image {
+    max-width: 100%;
+}
+
+.input {
+    margin-right: 10px;
+}
+
+.header-container {
+    padding-top: 25px;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+.articles-container {
+    display: inline-block;
+    justify-content: center;
+}
+
+.article-container {
+    background-color: aliceblue;
+    display: flex;
+    margin: auto;
+    max-width: 75%;
+    margin-bottom: 25px;
+    border: black;
+    border-width: 3px;
+    border-style: solid;
+    padding-right: 10%;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.title-image-container {
+    min-width: 550px;
+    text-align: center;
+}
+
+.description-container {
+    min-width: 25%;
+    margin-left: 20px;
+}
+
+.title {
+    margin-bottom: 5px;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: dodgerblue;
+}
