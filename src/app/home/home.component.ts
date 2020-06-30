@@ -30,12 +30,8 @@ export class HomeComponent implements OnInit {
   }
 
   getCountryNews(){
-    console.log('INPUT', this.countryForm.get('country').value);
-    
     this.service.getNewsServiceByCountry(this.countryForm.get('country').value).subscribe(
       (resp: Articles) => {
-        console.log(resp);
-        
         this.articles = resp
       }
     );
